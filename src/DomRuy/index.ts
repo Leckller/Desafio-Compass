@@ -1,3 +1,4 @@
+// Dom Ruy (manipulador do dom)
 class DR {
   // Factory Method
   static dr(): DR {
