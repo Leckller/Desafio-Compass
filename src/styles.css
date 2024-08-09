@@ -6,10 +6,12 @@
 
 header {
   display: flex;
+  width: 100vw;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 50px;
   align-items: center;
-  padding: 25px;
+  padding: 5px;
 }
 
 h1 {
@@ -27,36 +29,52 @@ nav {
   gap: 10px;
 }
 
-#article-buttons {
+/* PESQUISA PERFIL CARRINHO */
+
+#section-buttons {
   display: flex;
   flex-direction: row;
+  gap: 50px;
+  align-items: center;
   flex-wrap: nowrap;
 }
 
-
-#title-article {
+#section-buttons article {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .searchBar {
   display: flex;
   flex-direction: row;
-  width: 50vw;
   gap: 12px;
   border-radius: 20px;
-  width: 30vw;
   overflow: hidden;
   padding: 10px;
-  padding: 5px;
   background-color: #F0F0F0;
   color: #909090;
 }
 
-.buttonHeader {
-  background-color: transparent;
+.searchBar input {
   border: none;
+  width: 30vw;
+  background-color: transparent;
+  outline: none;
+}
+
+/* TITULO MENU HAMBURGUER */
+
+#title-article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  width: auto;
+}
+
+#title-article>button>img {
+  width: 24px;
 }
 
 .menu-hamburguer {
@@ -64,9 +82,41 @@ nav {
   position: absolute;
 }
 
-@media (max-width: 500px) {
+/* BOTOES HEADER */
+
+.buttonHeader {
+  background-color: transparent;
+  transition: 150ms;
+  border: none;
+  outline: none;
+}
+
+.buttonHeader:hover {
+  cursor: pointer;
+  transform: scale(105%);
+}
+
+.buttonText:hover {
+  border-bottom: solid black 1px;
+}
+
+@media (max-width: 1000px) {
+  header {
+    justify-content: space-between;
+  }
+
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  * {
+    font-size: 1rem;
+  }
+
   .searchBar input {
     visibility: hidden;
+    position: absolute;
   }
 
   .searchBar {
@@ -82,5 +132,15 @@ nav {
 
   nav {
     visibility: hidden;
+    position: absolute;
   }
+
+  #section-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
 }

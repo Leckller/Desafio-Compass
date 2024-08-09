@@ -16,16 +16,21 @@ class HeaderClass {
   private title() {
     const article = document.createElement('article');
     article.id = 'title-article';
+
     const title = document.createElement('h1');
+    title.textContent = 'SHOP.CO';
+
     const menu = document.createElement('button');
+    menu.classList.add('menu-hamburguer');
+    menu.classList.add('buttonHeader');
+
     const img = document.createElement('img');
     img.src = menuImg;
+
     article.appendChild(menu);
     article.appendChild(title);
     menu.appendChild(img);
-    menu.classList.add('menu-hamburguer');
-    menu.classList.add('buttonHeader');
-    title.textContent = 'SHOP.CO';
+
     return article;
   }
 
@@ -40,30 +45,39 @@ class HeaderClass {
 
   private dropBox() {
     const dropBox = document.createElement('select');
+    dropBox.classList.add('buttonHeader');
+    dropBox.classList.add('buttonText');
+
     const option1 = document.createElement('option');
-    dropBox.className = 'buttonHeader';
-    option1.innerText = 'T-Shirt';
+    option1.innerText = 'Shop';
+    const option2 = document.createElement('option');
+    option2.innerText = 'T-Shirt';
+
     dropBox.appendChild(option1);
+    dropBox.appendChild(option2);
     return dropBox;
   }
 
   private onSaleTitle() {
     const onSaleTitle = document.createElement('button');
-    onSaleTitle.className = 'buttonHeader';
+    onSaleTitle.classList.add('buttonHeader');
+    onSaleTitle.classList.add('buttonText');
     onSaleTitle.innerText = 'On Sale';
     return onSaleTitle;
   }
 
   private newArrivals() {
     const newArrivals = document.createElement('button');
-    newArrivals.className = 'buttonHeader';
+    newArrivals.classList.add('buttonHeader');
+    newArrivals.classList.add('buttonText');
     newArrivals.innerText = 'New Arrivals';
     return newArrivals;
   }
 
   private brands() {
     const brands = document.createElement('button');
-    brands.className = 'buttonHeader';
+    brands.classList.add('buttonHeader');
+    brands.classList.add('buttonText');
     brands.innerText = 'Brands';
     return brands;
   }
@@ -73,10 +87,7 @@ class HeaderClass {
     article.className = 'searchBar';
 
     const searchBar = document.createElement('input');
-    searchBar.style.border = 'none';
     searchBar.placeholder = 'Search for products...';
-    searchBar.style.backgroundColor = 'transparent';
-    searchBar.style.outline = 'none';
 
     const img = document.createElement('img');
     img.src = lupaImg;
@@ -87,16 +98,19 @@ class HeaderClass {
   }
 
   private article() {
+    const section = document.createElement('section');
     const article = document.createElement('article');
-    article.id = 'article-buttons';
-    article.appendChild(this.searchBar());
+    section.id = 'section-buttons';
+    section.appendChild(this.searchBar());
+    section.appendChild(article);
     article.appendChild(this.car());
     article.appendChild(this.profile());
-    return article;
+    return section;
   }
 
   private car() {
     const car = document.createElement('button');
+    car.classList.add('buttonHeader');
     car.style.backgroundColor = 'transparent';
     car.style.border = 'none';
     const img = document.createElement('img');
@@ -107,6 +121,7 @@ class HeaderClass {
 
   private profile() {
     const profile = document.createElement('button');
+    profile.classList.add('buttonHeader');
     profile.style.backgroundColor = 'transparent';
     profile.style.border = 'none';
     const img = document.createElement('img');
