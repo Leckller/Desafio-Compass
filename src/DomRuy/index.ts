@@ -9,8 +9,8 @@ class DR {
   public q(q: string): Element | undefined {
     try {
       const element = document.querySelector(q);
-      if (element) return element;
-      throw new Error('Elemento não encontrado!');
+      if (!element) throw new Error('Elemento não encontrado!');
+      return element;
     } catch (err) { console.log(`Erro: ${err}`); }
   }
 }
