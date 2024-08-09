@@ -1,3 +1,3 @@
-import log from './log';
+import Header from './Components/Header';
 
-log('Hello Compasser!');
+Header.build();
