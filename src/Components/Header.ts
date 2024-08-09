@@ -1,3 +1,5 @@
+import { car as carImage, profile as profileImage } from '../assets/index';
+
 class HeaderClass {
   public build() {
     const h = this.Header();
@@ -65,11 +67,21 @@ class HeaderClass {
 
   private car() {
     const car = document.createElement('button');
+    car.style.backgroundColor = 'transparent';
+    car.style.border = 'none';
+    const img = document.createElement('img');
+    img.src = carImage;
+    car.appendChild(img);
     return car;
   }
 
   private profile() {
     const profile = document.createElement('button');
+    profile.style.backgroundColor = 'transparent';
+    profile.style.border = 'none';
+    const img = document.createElement('img');
+    img.src = profileImage;
+    profile.appendChild(img);
     return profile;
   }
 }
