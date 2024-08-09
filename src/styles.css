@@ -1,18 +1,86 @@
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: center;
-  justify-content: center;
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+  font-size: 1.2rem;
 }
 
-section {
+header {
   display: flex;
-  width: 80%;
-  flex-direction: column;
-  text-align: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px;
 }
 
 h1 {
-  font-variant: small-caps;
+  font-family: "Radio Canada Big", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-size: 3rem;
+  font-style: normal;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+#article-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+
+#title-article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.searchBar {
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+  gap: 12px;
+  border-radius: 20px;
+  width: 30vw;
+  overflow: hidden;
+  padding: 10px;
+  padding: 5px;
+  background-color: #F0F0F0;
+  color: #909090;
+}
+
+.buttonHeader {
+  background-color: transparent;
+  border: none;
+}
+
+.menu-hamburguer {
+  visibility: hidden;
+  position: absolute;
+}
+
+@media (max-width: 500px) {
+  .searchBar input {
+    visibility: hidden;
+  }
+
+  .searchBar {
+    color: black;
+    width: 24px;
+    background-color: transparent;
+  }
+
+  .menu-hamburguer {
+    visibility: visible;
+    position: static;
+  }
+
+  nav {
+    visibility: hidden;
+  }
 }

@@ -1,32 +1,31 @@
-import { car as carImage, profile as profileImage } from '../assets/index';
+import { carImg, profileImg, lupaImg, menuImg } from '../assets/index';
 
 class HeaderClass {
   public build() {
     const h = this.Header();
     h.appendChild(this.title());
     h.appendChild(this.navBar());
-    h.appendChild(this.searchBar());
     h.appendChild(this.article());
   }
 
   public Header(): HTMLElement {
     const header = <HTMLElement>document.querySelector('#header');
-    header.style.display = 'flex';
-    header.style.justifyContent = 'space-between';
-    header.style.alignItems = 'center';
     return header;
   }
 
   private title() {
-    const title = document.createElement('h1');
-    title.textContent = 'SHOP.CO';
-    return title;
-  }
-
-  private article() {
     const article = document.createElement('article');
-    article.appendChild(this.car());
-    article.appendChild(this.profile());
+    article.id = 'title-article';
+    const title = document.createElement('h1');
+    const menu = document.createElement('button');
+    const img = document.createElement('img');
+    img.src = menuImg;
+    article.appendChild(menu);
+    article.appendChild(title);
+    menu.appendChild(img);
+    menu.classList.add('menu-hamburguer');
+    menu.classList.add('buttonHeader');
+    title.textContent = 'SHOP.CO';
     return article;
   }
 
@@ -41,28 +40,59 @@ class HeaderClass {
 
   private dropBox() {
     const dropBox = document.createElement('select');
+    const option1 = document.createElement('option');
+    dropBox.className = 'buttonHeader';
+    option1.innerText = 'T-Shirt';
+    dropBox.appendChild(option1);
     return dropBox;
   }
 
   private onSaleTitle() {
     const onSaleTitle = document.createElement('button');
+    onSaleTitle.className = 'buttonHeader';
+    onSaleTitle.innerText = 'On Sale';
     return onSaleTitle;
   }
 
   private newArrivals() {
     const newArrivals = document.createElement('button');
+    newArrivals.className = 'buttonHeader';
+    newArrivals.innerText = 'New Arrivals';
     return newArrivals;
   }
 
   private brands() {
     const brands = document.createElement('button');
+    brands.className = 'buttonHeader';
+    brands.innerText = 'Brands';
     return brands;
   }
 
   private searchBar() {
+    const article = document.createElement('article');
+    article.className = 'searchBar';
+
     const searchBar = document.createElement('input');
-    searchBar.placeholder = 'Search for products';
-    return searchBar;
+    searchBar.style.border = 'none';
+    searchBar.placeholder = 'Search for products...';
+    searchBar.style.backgroundColor = 'transparent';
+    searchBar.style.outline = 'none';
+
+    const img = document.createElement('img');
+    img.src = lupaImg;
+
+    article.appendChild(img);
+    article.appendChild(searchBar);
+    return article;
+  }
+
+  private article() {
+    const article = document.createElement('article');
+    article.id = 'article-buttons';
+    article.appendChild(this.searchBar());
+    article.appendChild(this.car());
+    article.appendChild(this.profile());
+    return article;
   }
 
   private car() {
@@ -70,7 +100,7 @@ class HeaderClass {
     car.style.backgroundColor = 'transparent';
     car.style.border = 'none';
     const img = document.createElement('img');
-    img.src = carImage;
+    img.src = carImg;
     car.appendChild(img);
     return car;
   }
@@ -80,7 +110,7 @@ class HeaderClass {
     profile.style.backgroundColor = 'transparent';
     profile.style.border = 'none';
     const img = document.createElement('img');
-    img.src = profileImage;
+    img.src = profileImg;
     profile.appendChild(img);
     return profile;
   }

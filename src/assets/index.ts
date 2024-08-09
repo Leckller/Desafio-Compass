@@ -1,4 +1,6 @@
-import car from './car.png';
-import profile from './profile.png';
+import carImg from './car.svg';
+import profileImg from './profile.svg';
+import lupaImg from './lupa.svg';
+import menuImg from './menu.svg';
 
-export { car, profile };
+export { carImg, profileImg, lupaImg, menuImg };
