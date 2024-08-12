@@ -21,6 +21,13 @@ header {
 
 /* TITULO PRINCIPAL */
 
+.titleDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
 .bigTitle {
   font-family: "Radio Canada Big", sans-serif;
   font-optical-sizing: auto;
@@ -143,8 +150,10 @@ main {
 .marcas {
   display: flex;
   background-color: black;
-  height: 115px;
+  min-height: 115px;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
   align-items: center;
 }
 
@@ -166,7 +175,9 @@ main {
   gap: 15px;
 }
 
-
+.roupasSection>button {
+  margin-top: 45px;
+}
 
 .roupasSection section {
   display: flex;
@@ -186,6 +197,10 @@ main {
   border-radius: 20px;
 }
 
+.roupa:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 1000px) {
   header {
     justify-content: space-between;
@@ -195,15 +210,6 @@ main {
     visibility: hidden;
     position: absolute;
   }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  * {
-    font-size: 1rem;
-  }
-
 
   #section-buttons {
     width: 30%;
@@ -233,5 +239,15 @@ main {
 
   /* ================= MAIN ================ */
 
+  .mainContent {
+    flex-direction: column;
+    max-height: 700px;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .mainContent>section {
+    width: 100%;
+    height: 500px;
+  }
 }
