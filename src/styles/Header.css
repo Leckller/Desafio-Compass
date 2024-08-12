@@ -85,6 +85,7 @@ nav>select {
         justify-content: space-between;
         position: fixed;
         background-color: white;
+        padding: 8px;
         gap: 0;
     }
 
