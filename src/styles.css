@@ -6,6 +6,8 @@
   box-sizing: border-box;
   padding: 0;
   overflow-x: hidden;
+  font-family: "Radio Canada Big", sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* ========================== HEADER ======================== */
@@ -25,11 +27,11 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  min-width: 220px;
   gap: 20px;
 }
 
 .bigTitle {
-  font-family: "Radio Canada Big", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
   font-size: 2.2rem;
@@ -62,7 +64,14 @@ nav>select {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
+  min-width: 100px;
   gap: 20px;
+}
+
+.searchSection article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .searchSection>label {
@@ -90,6 +99,16 @@ nav>select {
   transition: 300ms;
   border: none;
   outline: none;
+  text-decoration: none;
+  color: black;
+}
+
+.buttonsBlack {
+  background-color: black;
+  color: white;
+  width: 250px;
+  padding: 15px;
+  border-radius: 30px;
 }
 
 .buttons:hover {
@@ -129,15 +148,30 @@ main {
 
 .mainContent {
   display: flex;
-  max-height: 500px;
+  height: 600px;
   flex-direction: row;
+  justify-content: center;
 }
 
 .mainContent>section {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 45%;
+  justify-content: center;
+  gap: 20px;
 }
+
+.mainContent p {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.mainContent h2 {
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.mainContent h3 {}
 
 .modelsImage {
   width: 500px;
@@ -155,6 +189,7 @@ main {
   flex-wrap: wrap;
   gap: 20px;
   align-items: center;
+  padding: 10px;
 }
 
 .arrivals {
@@ -201,9 +236,12 @@ main {
   cursor: pointer;
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 0px) and (max-width: 1000px) {
   header {
     justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    gap: 0;
   }
 
   nav {
@@ -211,15 +249,8 @@ main {
     position: absolute;
   }
 
-  #section-buttons {
-    width: 30%;
-    justify-content: end;
+  .searchSection {
     margin-right: 10px;
-    gap: 10px;
-  }
-
-  #section-buttons article {
-    gap: 10px;
   }
 
   .searchSection label {
@@ -238,16 +269,30 @@ main {
   }
 
   /* ================= MAIN ================ */
+  main {
+    margin-top: 95px;
+  }
 
   .mainContent {
     flex-direction: column;
-    max-height: 700px;
     justify-content: center;
     align-items: center;
+    height: auto;
+    padding: 20px;
+    padding-bottom: 0;
   }
 
   .mainContent>section {
-    width: 100%;
+    width: auto;
+  }
+
+  .mainContent img {
     height: 500px;
+  }
+}
+
+@media (0px <=width <=360px) {
+  .searchSection article {
+    flex-direction: column;
   }
 }
