@@ -2,79 +2,31 @@
 
 * {
   font-size: 1.2rem;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  overflow-x: hidden;
 }
 
+/* ========================== HEADER ======================== */
 header {
   display: flex;
-  width: 100vw;
   flex-direction: row;
   justify-content: center;
+  width: 100vw;
   gap: 50px;
   align-items: center;
-  padding: 5px;
+  padding: 20px;
 }
+
+/* TITULO PRINCIPAL */
 
 h1 {
   font-family: "Radio Canada Big", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-style: normal;
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 10px;
-}
-
-/* PESQUISA PERFIL CARRINHO */
-
-#section-buttons {
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-
-#section-buttons article {
-  display: flex;
-  align-items: center;
-}
-
-.searchBar {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-  border-radius: 20px;
-  overflow: hidden;
-  padding: 10px;
-  background-color: #F0F0F0;
-  color: #909090;
-}
-
-.searchBar input {
-  border: none;
-  width: 30vw;
-  background-color: transparent;
-  outline: none;
-}
-
-/* TITULO MENU HAMBURGUER */
-
-#title-article {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  gap: 10px;
-  width: auto;
-}
-
-#title-article>button>img {
-  width: 24px;
 }
 
 .menu-hamburguer {
@@ -82,16 +34,58 @@ nav {
   position: absolute;
 }
 
-/* BOTOES HEADER */
+/* NAV BAR  */
 
-.buttonHeader {
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+
+nav>select {
+  outline: none;
+  border: none;
+}
+
+/* SECTION, PESQUISA, PERFIL, CARRINHO */
+
+.searchSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.searchSection>label {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  border-radius: 20px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  padding: 10px;
+  background-color: #f0f0f0c6;
+  color: #909090;
+}
+
+.searchSection input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+/* BOTOES */
+
+.buttons {
   background-color: transparent;
   transition: 150ms;
   border: none;
   outline: none;
 }
 
-.buttonHeader:hover {
+.buttons:hover {
   cursor: pointer;
   transform: scale(105%);
 }
@@ -100,11 +94,61 @@ nav {
   border-bottom: solid black 1px;
 }
 
+/* ================ MAIN ================ */
+
+main {
+  width: 100vw;
+  background-color: #F2F0F1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+/* Conteudo principal */
+
+.mainContent {
+  display: flex;
+  max-height: 500px;
+  flex-direction: row;
+}
+
+.mainContent>section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.modelsImage {
+  width: 500px;
+  object-fit: cover;
+  object-position: 0 -40px;
+}
+
+/* Roupas */
+
+.arrivals {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.marcas {
+  display: flex;
+  background-color: black;
+  height: 150px;
+  justify-content: space-around;
+  align-items: center;
+}
+
 @media (max-width: 1000px) {
   header {
     justify-content: space-between;
   }
 
+  nav {
+    visibility: hidden;
+    position: absolute;
+  }
 
   h1 {
     font-size: 2rem;
@@ -114,15 +158,26 @@ nav {
     font-size: 1rem;
   }
 
-  .searchBar input {
-    visibility: hidden;
-    position: absolute;
+
+  #section-buttons {
+    width: 30%;
+    justify-content: end;
+    margin-right: 10px;
+    gap: 10px;
   }
 
-  .searchBar {
-    color: black;
-    width: 24px;
+  #section-buttons article {
+    gap: 10px;
+  }
+
+  .searchSection label {
+    transform: translateX(25px) translateY(-1px);
     background-color: transparent;
+  }
+
+  .searchSection input {
+    visibility: hidden;
+    position: absolute;
   }
 
   .menu-hamburguer {
@@ -130,17 +185,7 @@ nav {
     position: static;
   }
 
-  nav {
-    visibility: hidden;
-    position: absolute;
-  }
+  /* ================= MAIN ================ */
 
-  #section-buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    align-items: center;
-    flex-wrap: nowrap;
-  }
 
 }
