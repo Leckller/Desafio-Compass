@@ -1,0 +1,188 @@
+/* ================ MAIN ================ */
+
+main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+/* Conteudo principal */
+
+.mainContent {
+    display: flex;
+    width: 100%;
+    max-width: 2500px;
+    background-color: #F2F0F1;
+    height: 600px;
+    flex-direction: row;
+    text-align: start;
+    justify-content: center;
+}
+
+.mainContent>section {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: auto;
+    justify-content: center;
+    gap: 25px;
+    padding: 10px;
+}
+
+.infoMain {
+    display: flex;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.mainContent p {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.mainContent h2 {
+    font-weight: bolder;
+    font-size: 2.2rem;
+}
+
+.modelsImage {
+    width: 500px;
+    object-fit: cover;
+    object-position: 0 -40px;
+}
+
+/* Roupas */
+
+.marcas {
+    display: flex;
+    width: 100vw;
+    background-color: black;
+    min-height: 115px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+}
+
+.arrivals {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    min-height: 600px;
+    align-items: center;
+    gap: 30px;
+}
+
+.roupasSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.roupasSection>button {
+    margin-top: 45px;
+}
+
+.roupasSection section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.roupa {
+    width: 300px;
+    height: 420px;
+    overflow: hidden;
+}
+
+.roupa img {
+    border-radius: 20px;
+}
+
+.roupa:hover {
+    cursor: pointer;
+}
+
+
+/* Css p esconder a barra de scroll do carrossel */
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.roupasSection section {
+    scrollbar-width: none;
+}
+
+.roupasSection section::-webkit-scrollbar {
+    display: none;
+}
+
+
+@media (min-width: 0px) and (max-width: 1050px) {
+
+    main {
+        margin-top: 55px;
+    }
+
+    .mainContent {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+        padding-bottom: 0;
+    }
+
+    .mainContent section div {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .mainContent h2 {
+        font-size: 2.5rem;
+    }
+
+    .mainContent>section {
+        width: auto;
+        align-items: center;
+    }
+
+    .mainContent img {
+        height: 500px;
+    }
+
+    .infoMain {
+        margin: 0;
+        gap: 10px;
+    }
+
+    .infoMain article {
+        width: auto;
+        min-width: 200px;
+        flex-grow: 1;
+    }
+
+    /* Roupas */
+    .roupasSection section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 450px;
+        overflow-x: scroll;
+        justify-content: center;
+        gap: 15px;
+    }
+}

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+  font-size: 1.2rem;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Radio Canada Big", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* BOTOES */
+
+.buttons {
+  background-color: transparent;
+  transition: 300ms;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  color: black;
+}
+
+.buttonsBlack {
+  background-color: black;
+  color: white;
+  min-width: 250px;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+.buttons:hover {
+  cursor: pointer;
+  text-shadow: 2px 1px 1px rgba(139, 139, 139, 0.289)
+}
+
+.buttonText:hover {
+  border-bottom: solid black 1px;
+}
+
+.border {
+  border: solid 1px rgba(143, 143, 143, 0.375);
+  padding: 10px;
+  width: 200px;
+  border-radius: 20px;
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+.borderB {
+  padding-bottom: 60px;
+  padding: 5px;
+  border-bottom: solid 1px rgba(143, 143, 143, 0.375);
+}
+
+.borderR {
+  border-right: solid 1px rgba(143, 143, 143, 0.375);
+}
+
+.borderL {
+  border-left: solid 1px rgba(143, 143, 143, 0.375);
+}
+
+.borderT {
+  border-top: solid 1px rgba(143, 143, 143, 0.375);
+}
+
+.p20 {
+  padding: 0 20px;
+}
+
+.text-15 h3 {
+  font-size: 2rem;
+}
+
+@media (min-width: 0px) and (max-width: 1050px) {
+  .buttonsBlack {
+    width: 100%;
+  }
+
+}

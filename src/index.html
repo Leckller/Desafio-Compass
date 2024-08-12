@@ -4,17 +4,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/Header.css">
+  <link rel="stylesheet" href="styles/Main.css">
   <title>WebPack Compass</title>
 </head>
 
 <body>
-  <main>
-    <section>
-      <h1>Olá, Compasser!</h1>
-      <p>Este é um exemplo de site estático usando Webpack!</p>
+  <div id="anchor" />
+  <header id="header">
+    <div class="titleDiv">
+      <button class="menu-hamburguer buttons"><img src="./assets/menu.svg" alt="Menu"></button>
+      <a href="#anchor" class="buttons">
+        <h1 class="bigTitle">SHOP.CO</h1>
+      </a>
+    </div>
+    <nav>
+      <select class="buttons">
+        <option value="Shop">Shop</option>
+        <option value="T-Shirt">T-Shirt</option>
+      </select>
+      <button class="buttons">On Sale</button>
+      <button class="buttons">New Arrivals</button>
+      <button class="buttons">Brands</button>
+    </nav>
+    <section class="searchSection">
+      <label for="searchInput">
+        <img src="./assets/lupa.svg" alt="Lupa">
+        <input id="searchInput" type="text" placeholder="Search for products...">
+      </label>
+      <article>
+        <button class="buttons"><img src="./assets/car.svg" alt="Car"></button>
+        <button class="buttons"><img src="./assets/profile.svg" alt="Profile"></button>
+      </article>
     </section>
+  </header>
+  <main>
+    <section class="mainContent">
+      <section>
+        <h2>FIND CLOTHES THAT MATCHES YOUR STYLE</h2>
+        <p>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality
+          and
+          cater to your sense of style.</p>
+        <div>
+          <button class="buttons buttonsBlack">Shop Now</button>
+        </div>
+        <section class="infoMain">
+          <article class="p20 text-15">
+            <h3>200+</h3>
+            <p>International Brands</p>
+          </article>
+          <article class="p20 text-15">
+            <h3>2,000+</h3>
+            <p>High-Quality Products</p>
+          </article>
+          <article class="p20 text-15">
+            <h3>30,000+</h3>
+            <p>Happy Customers</p>
+          </article>
+        </section>
+      </section>
+      <img class="modelsImage" src="./assets/modelos.jpeg" alt="Modelos">
+    </section>
+    <article class="marcas">
+      <h2><img src="./assets/Marcas/VERSACE.svg" alt="Versace"></h2>
+      <h2><img src="./assets/Marcas/ZARA.svg" alt="Zara"></h2>
+      <h2><img src="./assets/Marcas/GUCCI.svg" alt="Gucci"></h2>
+      <h2><img src="./assets/Marcas/PRADA.svg" alt="Prada"></h2>
+      <h2><img src="./assets/Marcas/CALVIN.svg" alt="Calvin Klein"></h2>
+    </article>
+    <section class="arrivals">
+      <h2 class="bigTitle">NEW ARRIVALS</h2>
+      <section class="roupasSection borderB">
+        <section>
+          <article class="roupa">
+            <img src="./assets/Roupas/CamisaCinza.svg" alt="T-SHIRT WITH TAPE DETAILS">
+            <h3>T-SHIRT WITH TAPE DETAILS</h3>
+            <div>⭐⭐⭐⭐<span>4</span></div>
+            <p>$120</p>
+          </article>
+          <article class="roupa">
+            <img src="./assets/Roupas/CamisaCinza.svg" alt="T-SHIRT WITH TAPE DETAILS">
+            <h3>T-SHIRT WITH TAPE DETAILS</h3>
+            <div>⭐⭐⭐⭐<span>4</span></div>
+            <p>$120</p>
+          </article>
+          <article class="roupa">
+            <img src="./assets/Roupas/CamisaCinza.svg" alt="T-SHIRT WITH TAPE DETAILS">
+            <h3>T-SHIRT WITH TAPE DETAILS</h3>
+            <div>⭐⭐⭐⭐<span>4</span></div>
+            <p>$120</p>
+          </article>
+          <article class="roupa">
+            <img src="./assets/Roupas/CamisaCinza.svg" alt="T-SHIRT WITH TAPE DETAILS">
+            <h3>T-SHIRT WITH TAPE DETAILS</h3>
+            <div>⭐⭐⭐⭐<span>4</span></div>
+            <p>$120</p>
+          </article>
+        </section>
+        <button class="buttons border">View All</button>
+      </section>
+    </section>
+    <section class="arrivals">
+      <h2 class="bigTitle">TOP SELLING</h2>
+      <section class="roupasSection">
+        <section>
+          <article class="roupa">
+            <img src="./assets/Roupas/CamisaCinza.svg" alt="T-SHIRT WITH TAPE DETAILS">
+            <h3>T-SHIRT WITH TAPE DETAILS</h3>
+            <div>⭐⭐⭐⭐<span>4</span></div>
+            <p>$120</p>
+          </article>
+          <article class="roupa">
+            <img src="./assets/Roupas/CamisaCinza.svg" alt="T-SHIRT WITH TAPE DETAILS">
+            <h3>T-SHIRT WITH TAPE DETAILS</h3>
+            <div>⭐⭐⭐⭐<span>4</span></div>
+            <p>$120</p>
+          </article>
+          <article class="roupa">
+            <img src="./assets/Roupas/CamisaCinza.svg" alt="T-SHIRT WITH TAPE DETAILS">
+            <h3>T-SHIRT WITH TAPE DETAILS</h3>
+            <div>⭐⭐⭐⭐<span>4</span></div>
+            <p>$120</p>
+          </article>
+          <article class="roupa">
+            <img src="./assets/Roupas/CamisaCinza.svg" alt="T-SHIRT WITH TAPE DETAILS">
+            <h3>T-SHIRT WITH TAPE DETAILS</h3>
+            <div>⭐⭐⭐⭐<span>4</span></div>
+            <p>$120</p>
+          </article>
+        </section>
+        <button class="buttons border">View All</button>
+      </section>
   </main>
+
+  <footer id="footer">
+
+  </footer>
   <script type="module" src="../dist/bundle.js"></script>
 </body>
 
