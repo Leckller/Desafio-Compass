@@ -1,0 +1,121 @@
+/* ========================== HEADER ======================== */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    gap: 50px;
+    align-items: center;
+    padding: 20px;
+}
+
+/* TITULO PRINCIPAL */
+
+.titleDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-width: 220px;
+    gap: 20px;
+}
+
+.bigTitle {
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 2.2rem;
+    font-style: normal;
+}
+
+.menu-hamburguer {
+    visibility: hidden;
+    position: absolute;
+}
+
+/* NAV BAR  */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+
+nav>select {
+    outline: none;
+    border: none;
+}
+
+/* SECTION, PESQUISA, PERFIL, CARRINHO */
+
+.searchSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    min-width: 100px;
+    gap: 20px;
+}
+
+.searchSection article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.searchSection>label {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    border-radius: 20px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    padding: 10px;
+    background-color: #f0f0f0c6;
+    color: #909090;
+}
+
+.searchSection input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+@media (min-width: 0px) and (max-width: 1000px) {
+    header {
+        justify-content: space-between;
+        position: fixed;
+        background-color: white;
+        gap: 0;
+    }
+
+    nav {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .searchSection {
+        margin-right: 10px;
+    }
+
+    .searchSection label {
+        transform: translateX(25px) translateY(-1px);
+        background-color: transparent;
+    }
+
+    .searchSection input {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .menu-hamburguer {
+        visibility: visible;
+        position: static;
+    }
+
+}
+
+@media (0px <=width <=360px) {
+    .searchSection article {
+        flex-direction: column;
+    }
+}
