@@ -286,6 +286,12 @@ main {
         flex-grow: 1;
     }
 
+    /* Styles */
+    .styles article {
+        flex-direction: column;
+    }
+
+
     /* Roupas */
     .roupasSection section {
         display: flex;
