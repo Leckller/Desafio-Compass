@@ -1,0 +1,7 @@
+footer {
+    min-height: 500px;
+    background-color: #F0F0F0;
+}
+
+
+@media (min-width: 0px) and (max-width: 1050px) {}

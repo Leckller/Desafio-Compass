@@ -8,9 +8,18 @@
   overflow-x: hidden;
   font-family: "Radio Canada Big", sans-serif;
   scroll-behavior: smooth;
+  scrollbar-color: black #F0EEED;
 }
 
 /* BOTOES */
+
+.spanR::before {
+  content: "<";
+}
+
+.spanL::before {
+  content: ">";
+}
 
 .buttons {
   background-color: transparent;
@@ -71,6 +80,10 @@
 
 .text-15 h3 {
   font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
 }
 
 @media (min-width: 0px) and (max-width: 1050px) {
