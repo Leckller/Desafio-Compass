@@ -1,5 +1,4 @@
 footer {
-    min-height: 500px;
     background-color: #F0F0F0;
     display: flex;
     flex-direction: column;
@@ -48,13 +47,12 @@ footer section {
     align-items: center;
     flex-wrap: wrap;
     width: 45%;
-    min-width: 350px;
     gap: 20px;
     position: relative;
 }
 
 .formSection input {
-    width: 100%;
+    width: 90%;
     font-size: 1rem;
 }
 
@@ -75,18 +73,24 @@ footer section {
     position: relative;
 }
 
-.infoFooter {
+.infoPay {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 90%;
-    gap: 20px;
+}
+
+.infoFooter {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-evenly;
+    gap: 30px;
 }
 
 .infoFooter article {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
     width: 45%;
     gap: 15px;
 }
@@ -113,35 +117,61 @@ footer section {
     font-size: 2.5rem;
 }
 
-.infoPay {
+
+.helpers {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    gap: 10px;
     justify-content: space-between;
-    width: 90%;
+}
+
+.helpers h4 {
+    font-size: 1.5rem;
+}
+
+.helpers a {
+    font-size: 0.9rem;
+}
+
+.helpers article {
+    min-width: 170px;
 }
 
 @media (min-width: 0px) and (max-width: 1050px) {
-    .formSection {
+    .infoFooter>article {
+        width: 100%;
+    }
+
+    .infoFooter {
         flex-direction: column;
     }
 
-
-    .infoFooter {
+    .helpers {
+        flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    .formSection {
+        flex-direction: column;
+        align-items: start;
     }
 
     .formSection form {
         width: 100%;
+        align-items: start;
     }
 
     .formSection h2 {
-        flex-grow: 1;
+        font-size: 2rem;
         width: 100%;
     }
 
     .formSection button,
     .formSection label {
-        flex-grow: 1;
+        font-size: .8rem;
         width: 100%;
     }
+
+
 }
