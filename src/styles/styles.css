@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
 
 * {
-  font-size: 1.2rem;
   margin: 0;
-  box-sizing: border-box;
   padding: 0;
+  box-sizing: border-box;
+  font-size: 1.2rem;
   overflow-x: hidden;
   font-family: "Radio Canada Big", sans-serif;
   scroll-behavior: smooth;
+  scrollbar-color: black #F0EEED;
 }
 
 /* BOTOES */
+
+.spanR::before {
+  content: "<";
+}
+
+.spanL::before {
+  content: ">";
+}
 
 .buttons {
   background-color: transparent;
@@ -36,6 +45,18 @@
 
 .buttonText:hover {
   border-bottom: solid black 1px;
+}
+
+.bgWhite {
+  background-color: white;
+}
+
+.bgBlack {
+  background-color: black;
+}
+
+.rounded {
+  border-radius: 99999px;
 }
 
 .border {
@@ -71,6 +92,10 @@
 
 .text-15 h3 {
   font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
 }
 
 @media (min-width: 0px) and (max-width: 1050px) {
