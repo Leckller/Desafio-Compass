@@ -78,6 +78,7 @@ main {
     flex-direction: column;
     padding: 30px;
     min-height: 600px;
+    width: 90%;
     align-items: center;
     gap: 30px;
 }
@@ -97,10 +98,15 @@ main {
 
 .roupasSection section {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    overflow-x: scroll;
     justify-content: center;
+    flex-wrap: wrap;
+    height: 450px;
     outline: none;
+    scroll-snap-type: x mandatory;
+    padding-left: 50px;
+    padding-right: 50px;
     gap: 15px;
 }
 
@@ -108,6 +114,7 @@ main {
     width: 300px;
     height: 450px;
     overflow: hidden;
+    scroll-snap-align: center;
 }
 
 .roupa img {
@@ -139,11 +146,10 @@ main {
     justify-content: center;
     align-items: center;
     background-color: #F2F0F1;
-    width: 60%;
-    padding: 40px;
-    gap: 20px;
+    width: 90%;
     border-radius: 30px;
 }
+
 
 .styles article {
     border-radius: 30px;
@@ -155,6 +161,7 @@ main {
     justify-content: center;
     height: auto;
     align-items: center;
+    padding: 30px;
 }
 
 .styles button {
@@ -164,7 +171,6 @@ main {
     flex-direction: row-reverse;
     position: relative;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.507);
-    min-width: 400px;
     margin-bottom: 10px;
     flex-grow: 1;
 }
@@ -183,13 +189,14 @@ main {
 } */
 
 .styles img {
-    width: 300px;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
 }
 
 .styles h2 {
-    margin: 20px;
+    margin-top: 25px;
+    font-size: 3rem;
+    text-align: center;
 }
 
 .styles h3 {
@@ -298,6 +305,7 @@ main {
 
     .mainContent h2 {
         font-size: 2.5rem;
+        padding: 20px;
     }
 
     .mainContent>section {
@@ -321,10 +329,13 @@ main {
     }
 
     /* Styles */
-    .styles article {
-        flex-direction: column;
+    .styles img {
+        height: 250px;
     }
 
+    .styles h2 {
+        font-size: 2rem;
+    }
 
     /* Roupas */
     .roupasSection section {
