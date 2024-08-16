@@ -37,9 +37,6 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new SVGSpriteLoader(),
-  ],
   resolve: {
     extensions: ['.ts', '.js'],
   },
