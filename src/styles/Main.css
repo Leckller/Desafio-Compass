@@ -59,6 +59,58 @@ main {
 
 /* Roupas */
 
+.avaliacao {
+    display: flex;
+}
+
+.avaliacao p {
+    margin-left: 10px;
+}
+
+.precos {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.preco::before,
+.DescontoTotal::before {
+    content: "$";
+}
+
+
+
+.desconto {
+    background-color: rgba(255, 68, 68, 0.185);
+    color: rgb(255, 44, 44);
+    width: 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+}
+
+.desconto::before {
+    content: "-";
+}
+
+.desconto::after {
+    content: "%";
+}
+
+.DescontoTotal {
+    color: rgb(103, 103, 103);
+    text-decoration: line-through 1px;
+    text-decoration-color: rgba(103, 103, 103, 0.777);
+}
+
+/* Adiciona a avaliacao maxima ao final */
+.avaliacao p::after {
+    content: "/5";
+    color: rgba(77, 77, 77, 0.407);
+}
+
 .marcas {
     max-width: 3000px;
     display: flex;
@@ -258,6 +310,11 @@ main {
     gap: 10px;
     border: solid 1px rgba(143, 143, 143, 0.375);
     scroll-snap-align: center;
+}
+
+.TitleBox {
+    display: flex;
+    gap: 10px;
 }
 
 /* Para o blur nos cards */
