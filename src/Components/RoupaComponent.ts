@@ -7,7 +7,7 @@ function RoupaComponent(campos: IRoupa) {
 
   const Image = document.createElement('img');
   Image.alt = campos.nome;
-  Image.src = campos.img;
+  Image.src = `.${campos.img}`;
 
   const Title = document.createElement('h3');
   Title.textContent = campos.nome;
@@ -16,7 +16,7 @@ function RoupaComponent(campos: IRoupa) {
   avaliacao.classList.add('avaliacao');
   for (let i = 0; i < campos.avaliacao; i++) {
     const star = document.createElement('img');
-    star.src = campos.avaliacao - i === 0.5 ? halfStar : fullStar;
+    star.src = campos.avaliacao - i === 0.5 ? `.${halfStar}` : `.${fullStar}`;
     star.alt = 'Star';
     avaliacao.appendChild(star);
   }
