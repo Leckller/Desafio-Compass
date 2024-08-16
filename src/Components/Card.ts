@@ -1,6 +1,6 @@
-import { CardType } from '../Types/Card';
+import IRoupa from '../Types/IRoupa';
 
-function Card(cardFields: CardType, id: number) {
+function Roupa(cardFields: IRoupa, id: number) {
   const card = document.createElement('article');
   card.id = `card-${id}`;
   card.classList.add('card');
@@ -9,13 +9,13 @@ function Card(cardFields: CardType, id: number) {
   Image.src = cardFields.img;
 
   const Title = document.createElement('h3');
-  Title.textContent = cardFields.name;
+  Title.textContent = cardFields.nome;
 
   const Stars = document.createElement('span');
-  Stars.textContent = cardFields.stars;
+  Stars.textContent = cardFields.avaliacao.toString();
 
   const Price = document.createElement('p');
-  Price.textContent = cardFields.price;
+  Price.textContent = cardFields.preco.toString();
 
   card.appendChild(Image);
   card.appendChild(Title);
@@ -25,4 +25,4 @@ function Card(cardFields: CardType, id: number) {
   return card;
 }
 
-export default Card;
+export default Roupa;
