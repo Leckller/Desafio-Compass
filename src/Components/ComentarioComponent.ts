@@ -10,7 +10,7 @@ function ComentarioComponent(campos: IComentario) {
   avaliacao.classList.add('avaliacao');
   for (let i = 0; i < campos.avaliacao; i++) {
     const star = document.createElement('img');
-    star.src = campos.avaliacao - i === 0.5 ? halfStar : fullStar;
+    star.src = campos.avaliacao - i === 0.5 ? `.${halfStar}` : `.${fullStar}`;
     star.alt = 'Star';
     avaliacao.appendChild(star);
   }
@@ -22,7 +22,7 @@ function ComentarioComponent(campos: IComentario) {
   Title.textContent = campos.nome;
 
   const Verificado = document.createElement('img');
-  Verificado.src = verificado;
+  Verificado.src = `.${verificado}`;
   Verificado.alt = 'Usuário verificado';
 
   TitleBox.appendChild(Title);
