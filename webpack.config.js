@@ -26,8 +26,18 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg)$/i,  // Regra para imagens
         type: "asset/resource",  // Utiliza o asset modules do Webpack 5
       },
+      {
+        test: /\.svg$/,
+        include: /.*_icons\.svg/,
+        use: [
+          { loader: 'svg-sprite-loader', options: { publicPath: '' } },
+        ],
+      },
     ],
   },
+  plugins: [
+    new SVGSpriteLoader(),
+  ],
   resolve: {
     extensions: [".ts", ".js"],
   },
