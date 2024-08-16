@@ -1,14 +1,14 @@
 import Roupa from '../models/Roupa';
 // import { TopSeeling, Arrivals } from '../assets/Roupas/index';
 // Infelizmente a exportação com barril n tá funcionando
-import camisaCinzaIMG from '../../build/Arrivals/CamisaCinza.svg';
-import CheckeredShirtIMG from '../../build/Arrivals/CheckeredShirt.svg';
-import SkinnyFitJeansIMG from '../../build/Arrivals/SkinnyFitJeans.svg';
-import SleeveStripedTshirtIMG from '../../build/Arrivals/SleeveStripedTshirt.svg';
-import VerticalStripedShirtIMG from '../../build/TopSeeling/VerticalStripedShirt.svg';
-import CourageGraphicTshirtIMG from '../../build/TopSeeling/CourageGraphicTshirt.svg';
-import FadedSkinnyJeansIMG from '../../build/TopSeeling/FadedSkinnyJeans.svg';
-import LooseFitBermudaShortsIMG from '../../build/TopSeeling/LooseFitBermudaShorts.svg';
+import camisaCinzaIMG from '../../build/c66d36ff03966f06bacd.svg';
+import CheckeredShirtIMG from '../../build/a6443a2a0f0cffdaa5a1.svg';
+import SkinnyFitJeansIMG from '../../build/9e126e77dafcee54b69d.svg';
+import SleeveStripedTshirtIMG from '../../build/acb0123a68912e9e87e0.svg';
+import VerticalStripedShirtIMG from '../../build/4ee180fa67a126039a4b.svg';
+import CourageGraphicTshirtIMG from '../../build/e410419bffd0d376031b.svg';
+import FadedSkinnyJeansIMG from '../../build/a346299c236fa9c0fe27.svg';
+import LooseFitBermudaShortsIMG from '../../build/8cbc44f228e4a20d74dc.svg';
 
 // ARRIVALS
 
