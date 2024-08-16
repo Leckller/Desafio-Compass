@@ -1,5 +1,6 @@
+import fullStar from '../../build/Stars/fullStar.svg';
+import halfStar from '../../build/Stars/halfStar.svg';
 import IComentario from '../Types/IComentario';
-import { fullStar, halfStar } from '../assets/Stars/index';
 import verificado from '../assets/verificado.svg';
 
 function ComentarioComponent(campos: IComentario) {
