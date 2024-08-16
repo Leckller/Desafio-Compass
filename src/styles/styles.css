@@ -1,15 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
 
+@font-face {
+  font-family: integralCf;
+  src: url(../fonts/Integral-CF-Font-Family/Fontspring-DEMO-integralcf-bold.otf)
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Radio Canada Big", sans-serif;
   font-weight: 10000;
   font-size: 1.2rem;
   overflow-x: hidden;
-  font-family: "Radio Canada Big", sans-serif;
   scroll-behavior: smooth;
   scrollbar-color: black #F0EEED;
+}
+
+* h1,
+h2 {
+  font-family: integralCF;
 }
 
 /* BOTOES */

@@ -24,7 +24,7 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    min-width: 220px;
+    min-width: 250px;
     gap: 20px;
 }
 
@@ -64,7 +64,6 @@ nav>select {
     flex-grow: 1;
     max-width: 1000px;
     min-width: 100px;
-    gap: 20px;
 }
 
 .searchSection article {
@@ -98,12 +97,14 @@ nav>select {
         justify-content: space-between;
         position: fixed;
         background-color: white;
-        padding: 8px;
+        padding: 5px;
+        width: 100vw;
         gap: 0;
     }
 
     nav {
         visibility: hidden;
+        width: 0;
         position: absolute;
     }
 
@@ -113,7 +114,6 @@ nav>select {
     }
 
     .searchSection {
-        margin-right: 10px;
         flex-grow: 0;
     }
 
