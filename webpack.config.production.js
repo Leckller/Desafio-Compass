@@ -1,34 +1,35 @@
-import { join, resolve as _resolve } from 'path';
-import { CleanWebpackPlugin } from 'clean-webpack-plugin';
+/* eslint-disable @typescript-eslint/no-var-requires */
+const path = require('path');
 
-export const mode = 'production';
-export const entry = './src/app.ts';
-export const devServer = {
-  static: [
-    {
-      directory: join(__dirname),
-    },
-  ],
+module.exports = {
+  mode: 'production',
+  entry: './src/app.ts',
+  devServer: {
+    static: [
+      {
+        directory: path.join(__dirname),
+      },
+    ],
+  },
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/dist/',
+  },
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i, // Regra para imagens
+        type: 'asset/resource', // Utiliza o asset modules do Webpack 5
+      },
+    ],
+  },
+  resolve: {
+    extensions: ['.ts', '.js'],
+  },
 };
-export const output = {
-  filename: 'bundle.js',
-  path: _resolve(__dirname, 'dist'),
-  publicPath: '/dist/',
-};
-export const module = {
-  rules: [
-    {
-      test: /\.tsx?$/,
-      use: 'ts-loader',
-      exclude: /node_modules/,
-    },
-    {
-      test: /\.(png|jpe?g|gif|svg)$/i, // Regra para imagens
-      type: 'asset/resource', // Utiliza o asset modules do Webpack 5
-    },
-  ],
-};
-export const resolve = {
-  extensions: ['.ts', '.js'],
-};
-export const plugins = [new CleanWebpackPlugin()];
