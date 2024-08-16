@@ -7,7 +7,7 @@
         "build-dev": "webpack",
         "build-production": "webpack --config webpack.config.production.js",
         "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-        "predeploy": "npm run build-production",
+        "predeploy": "",
         "deploy": "gh-pages -d build"
     },
     "homepage": "https://Leckller.github.io/Desafio-Compass",
