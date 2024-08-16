@@ -35,12 +35,12 @@ const SleeveStripedTshirt = new Roupa({
   desconto: 0.7,
 });
 
-const arrivals = {
+const arrivals = [
   tshirtWithTapeDetails,
   SkinnyFitJeans,
   CheckeredShirt,
   SleeveStripedTshirt,
-};
+];
 
 // TOP SEELING
 
@@ -73,12 +73,12 @@ const FadedSkinnyJeans = new Roupa({
   desconto: 1,
 });
 
-const topSeeling = {
+const topSeeling = [
   VerticalStripedShirt,
   CourageGraphicTshirt,
   LooseFitBermudaShorts,
   FadedSkinnyJeans,
-};
+];
 
 export const Roupas = {
   arrivals,

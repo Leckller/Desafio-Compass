@@ -12,8 +12,8 @@ module.exports = {
   },
   output: {
     filename: "bundle.js",
-    path: path.resolve(__dirname, "build"),
-    publicPath: "/build/",
+    path: path.resolve(__dirname, "dist"),
+    publicPath: "/dist/",
   },
   module: {
     rules: [
@@ -21,6 +21,10 @@ module.exports = {
         test: /\.tsx?$/,
         use: "ts-loader",
         exclude: /node_modules/,
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,  // Regra para imagens
+        type: "asset/resource",  // Utiliza o asset modules do Webpack 5
       },
     ],
   },
