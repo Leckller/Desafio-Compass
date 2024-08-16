@@ -78,6 +78,8 @@ main {
     content: "$";
 }
 
+
+
 .desconto {
     background-color: rgba(255, 68, 68, 0.185);
     color: rgb(255, 44, 44);
@@ -308,6 +310,11 @@ main {
     gap: 10px;
     border: solid 1px rgba(143, 143, 143, 0.375);
     scroll-snap-align: center;
+}
+
+.TitleBox {
+    display: flex;
+    gap: 10px;
 }
 
 /* Para o blur nos cards */
