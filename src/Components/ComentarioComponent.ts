@@ -1,7 +1,7 @@
-import fullStar from '../../build/Stars/fullStar.svg';
-import halfStar from '../../build/Stars/halfStar.svg';
+import fullStar from '../../build/b1d6c7906841b8af8935.svg';
+import halfStar from '../../build/07158a751cb6ff8ad726.svg';
 import IComentario from '../Types/IComentario';
-import verificado from '../assets/verificado.svg';
+import verificado from '../../build/5bedf0c3f466cdaaa786.svg';
 
 function ComentarioComponent(campos: IComentario) {
   const Card = document.createElement('article');
