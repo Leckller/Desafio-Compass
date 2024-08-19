@@ -7,14 +7,16 @@
         "build-dev": "webpack",
         "build-production": "webpack --config webpack.config.production.js",
         "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-        "predeploy": "",
+        "predeploy": "build-prodction",
         "deploy": "gh-pages -d build"
     },
     "homepage": "https://Leckller.github.io/Desafio-Compass",
     "devDependencies": {
         "@trybe/eslint-config-frontend": "^1.11.4",
         "clean-webpack-plugin": "^4.0.0",
+        "file-loader": "^6.2.0",
         "gh-pages": "^6.1.1",
+        "svg-inline-loader": "^0.8.2",
         "ts-loader": "^9.5.1",
         "typescript": "^5.5.3",
         "webpack": "^5.93.0",
