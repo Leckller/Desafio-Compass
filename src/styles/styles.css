@@ -18,6 +18,7 @@
   transition: all;
 }
 
+
 * h1,
 h2 {
   font-family: integralCF;
@@ -164,4 +165,7 @@ p {
     width: 100%;
   }
 
+  .viewAll {
+    visibility: hidden;
+  }
 }
