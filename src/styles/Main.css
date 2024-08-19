@@ -358,6 +358,16 @@ main {
     right: 0;
 } */
 
+@media (min-width: 0px) and (max-width: 390px) {
+    .ds1 {
+        left: 15vw;
+    }
+
+    .ds2 {
+        right: 13vw;
+    }
+}
+
 
 @media (min-width: 0px) and (max-width: 1050px) {
 
