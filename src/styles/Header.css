@@ -43,7 +43,28 @@ header {
     position: absolute;
 }
 
-.headerMenu {}
+.headerMenu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.headerMenu button {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.mainContentMenu {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: start;
+    align-items: start;
+}
+
+.mainContentMenu button {
+    border-bottom: black solid 1px;
+}
 
 .menu {
     display: flex;
@@ -52,10 +73,14 @@ header {
     position: fixed;
     z-index: 9999;
     background-color: white;
-    width: 80vw;
+    width: 40vw;
+    max-width: 80vw;
+    min-width: 350px;
     height: 100vh;
     top: 0;
     animation: leftIn 1s forwards;
+    padding: 10px;
+    gap: 20px;
 }
 
 @keyframes leftOut {
@@ -130,7 +155,7 @@ nav>select {
     background-color: transparent;
 }
 
-@media (min-width: 0px) and (max-width: 1000px) {
+@media (min-width: 0px) and (max-width: 1050px) {
     header {
         justify-content: space-between;
         position: fixed;

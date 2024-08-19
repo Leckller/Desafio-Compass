@@ -5,7 +5,7 @@ function FormAction() {
   const form = document.querySelector('form')! as HTMLFormElement;
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const input = document.querySelector('#email') as any;
+    const input = document.querySelector('#email') as HTMLInputElement;
     const validate = validateEmail(input.value);
     if (!validate) {
       AlertAction('Invalid email!', 'Please enter a valid email');
