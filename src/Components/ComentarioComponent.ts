@@ -8,6 +8,7 @@ function ComentarioComponent(campos: IComentario) {
 
   const avaliacao = document.createElement('div');
   avaliacao.classList.add('avaliacao');
+
   for (let i = 0; i < campos.avaliacao; i++) {
     const star = document.createElement('img');
     star.src = campos.avaliacao - i === 0.5 ? halfStar : fullStar;

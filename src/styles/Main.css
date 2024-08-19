@@ -54,7 +54,34 @@ main {
 .modelsImage {
     width: 500px;
     object-fit: cover;
-    object-position: 0 -40px;
+    object-position: 0 -50px;
+}
+
+.darkStar {
+    position: absolute;
+}
+
+.ds1 {
+    max-height: 54px;
+    max-width: 54px;
+    min-height: 54px;
+    min-width: 54px;
+    top: 40%;
+}
+
+.ds2 {
+    max-width: 104px;
+    min-width: 104px;
+    max-height: 104px;
+    min-height: 104px;
+    top: 15%;
+    right: 0;
+}
+
+.modelsContent {
+    display: flex;
+    position: relative;
+    overflow: hidden;
 }
 
 /* Roupas */
@@ -77,8 +104,6 @@ main {
 .DescontoTotal::before {
     content: "$";
 }
-
-
 
 .desconto {
     background-color: rgba(255, 68, 68, 0.185);
@@ -339,8 +364,6 @@ main {
     .customers h2 {
         font-size: 1.5rem;
     }
-
-    .card {}
 
     main {
         margin-top: 55px;

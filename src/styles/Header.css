@@ -2,6 +2,7 @@
 header {
     display: flex;
     z-index: 10;
+    align-items: center;
     justify-content: center;
     width: 100vw;
     gap: 50px;
@@ -22,6 +23,8 @@ header {
 
 .titleDiv {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
     min-width: 250px;
@@ -38,6 +41,66 @@ header {
 .menu-hamburguer {
     visibility: hidden;
     position: absolute;
+}
+
+.headerMenu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.headerMenu button {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.mainContentMenu {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: start;
+    align-items: start;
+}
+
+.mainContentMenu button {
+    border-bottom: black solid 1px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    background-color: white;
+    width: 40vw;
+    max-width: 80vw;
+    min-width: 350px;
+    height: 100vh;
+    top: 0;
+    animation: leftIn 1s forwards;
+    padding: 10px;
+    gap: 20px;
+}
+
+@keyframes leftOut {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100vw);
+    }
+}
+
+@keyframes leftIn {
+    from {
+        transform: translateX(-100vw);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
 
 /* NAV BAR  */
@@ -92,7 +155,7 @@ nav>select {
     background-color: transparent;
 }
 
-@media (min-width: 0px) and (max-width: 1000px) {
+@media (min-width: 0px) and (max-width: 1050px) {
     header {
         justify-content: space-between;
         position: fixed;
@@ -115,10 +178,11 @@ nav>select {
 
     .searchSection {
         flex-grow: 0;
+        gap: 15px;
     }
 
     .searchSection label {
-        transform: translateX(25px) translateY(-1px);
+        transform: translateX(25px) translateY(-2px);
         background-color: transparent;
     }
 
