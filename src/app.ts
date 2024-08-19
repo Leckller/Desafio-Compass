@@ -29,6 +29,7 @@ Comentarios.forEach((comentario) => {
  });
 */
 
+import ViewAllAction from './Components/Actions/ViewAll';
 import SearchBarAction from './Components/Actions/searchBar';
 import MenuAction from './Components/Actions/Menu';
 import FormAction from './Components/Actions/Form';
@@ -43,3 +44,7 @@ FormAction();
 
 // Evento para abrir a barra de pesquisas
 SearchBarAction();
+
+// Evento para mostrar o restante das roupas
+
+ViewAllAction();
