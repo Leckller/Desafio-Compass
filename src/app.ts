@@ -1,3 +1,4 @@
+import SignUpAction from './Components/Actions/SignUp';
 import ViewAllAction from './Components/Actions/ViewAll';
 import SearchBarAction from './Components/Actions/searchBar';
 import MenuAction from './Components/Actions/Menu';
@@ -17,3 +18,7 @@ SearchBarAction();
 // Evento para mostrar o restante das roupas
 
 ViewAllAction();
+
+// Evento para remover a div de login do topo
+
+SignUpAction();
