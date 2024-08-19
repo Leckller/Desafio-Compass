@@ -54,7 +54,26 @@ main {
 .modelsImage {
     width: 500px;
     object-fit: cover;
-    object-position: 0 -40px;
+    object-position: 0 -50px;
+}
+
+.darkStar {
+    position: absolute;
+}
+
+.ds1 {
+    width: 54px;
+}
+
+.ds2 {
+    width: 104px;
+    right: 0;
+}
+
+.modelsContent {
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 /* Roupas */

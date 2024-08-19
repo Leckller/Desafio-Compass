@@ -1,28 +1,28 @@
-import Comentarios from './utils/Comentarios';
-import ComentarioComponent from './Components/ComentarioComponent';
-import RoupaComponent from './Components/RoupaComponent';
-import { Roupas } from './utils/Roupas';
+// import Comentarios from './utils/Comentarios';
+// import ComentarioComponent from './Components/ComentarioComponent';
+// import RoupaComponent from './Components/RoupaComponent';
+// import { Roupas } from './utils/Roupas';
 
-const ArrivalsContent = document.querySelector('#ArrivalsContent')!;
-const TopSeelingContent = document.querySelector('#TopSeelingContent')!;
+// const ArrivalsContent = document.querySelector('#ArrivalsContent')!;
+// const TopSeelingContent = document.querySelector('#TopSeelingContent')!;
 
-// Adiciona as roupas
+// // Adiciona as roupas
 
-Roupas.arrivals.forEach((roupa) => {
-  const newRoupa = RoupaComponent(roupa);
-  ArrivalsContent.appendChild(newRoupa);
-});
+// Roupas.arrivals.forEach((roupa) => {
+//   const newRoupa = RoupaComponent(roupa);
+//   ArrivalsContent.appendChild(newRoupa);
+// });
 
-Roupas.topSeeling.forEach((roupa) => {
-  const newRoupa = RoupaComponent(roupa);
-  TopSeelingContent.appendChild(newRoupa);
-});
+// Roupas.topSeeling.forEach((roupa) => {
+//   const newRoupa = RoupaComponent(roupa);
+//   TopSeelingContent.appendChild(newRoupa);
+// });
 
-// Adicion os comentarios
+// // Adicion os comentarios
 
-const SectionCards = document.querySelector('.sectionCard')!;
+// const SectionCards = document.querySelector('.sectionCard')!;
 
-Comentarios.forEach((comentario) => {
-  const novoComentario = ComentarioComponent(comentario);
-  SectionCards.appendChild(novoComentario);
-});
+// Comentarios.forEach((comentario) => {
+//   const novoComentario = ComentarioComponent(comentario);
+//   SectionCards.appendChild(novoComentario);
+// });

@@ -26,11 +26,6 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg)$/i, // Regra para imagens
         type: 'asset/resource', // Utiliza o asset modules do Webpack 5
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
       },
     ],
   },

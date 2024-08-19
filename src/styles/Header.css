@@ -2,6 +2,7 @@
 header {
     display: flex;
     z-index: 10;
+    align-items: center;
     justify-content: center;
     width: 100vw;
     gap: 50px;
@@ -22,6 +23,8 @@ header {
 
 .titleDiv {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
     min-width: 250px;
@@ -115,10 +118,11 @@ nav>select {
 
     .searchSection {
         flex-grow: 0;
+        gap: 15px;
     }
 
     .searchSection label {
-        transform: translateX(25px) translateY(-1px);
+        transform: translateX(25px) translateY(-2px);
         background-color: transparent;
     }
 
