@@ -43,6 +43,41 @@ header {
     position: absolute;
 }
 
+.headerMenu {}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    background-color: white;
+    width: 80vw;
+    height: 100vh;
+    top: 0;
+    animation: leftIn 1s forwards;
+}
+
+@keyframes leftOut {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100vw);
+    }
+}
+
+@keyframes leftIn {
+    from {
+        transform: translateX(-100vw);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
 /* NAV BAR  */
 
 nav {
